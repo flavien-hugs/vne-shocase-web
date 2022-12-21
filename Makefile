@@ -10,7 +10,7 @@ venv: ## Make a new virtual environment
 	pipenv shell
 
 .PHONY: install
-install: venv ## Install or update dependencies
+install: ## Install or update dependencies
 	pipenv install
 
 freeze: ## Pin current dependencies
