@@ -76,12 +76,6 @@ def create_app(config_name):
         def log_exit(exc):
             app.logger.debug("Traitement de la demande terminé", exc_info=exc)
 
-        try:
-            if not os.path.exists("upload"):
-                os.mkdir("upload")
-        except OSError:
-            pass
-
         if not app.debug and not app.testing:
             if not os.path.exists("logs"):
                 os.mkdir("logs")
