@@ -2,8 +2,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand me-0" href="/">
-                <img loading="lazy" class="light-mode-item navbar-brand-item" src="{{ url_for('static', filename='img/logo/logo.png') }}" alt="logo-venone" height="106" width="506">
-                <img loading="lazy" class="dark-mode-item navbar-brand-item" src="{{ url_for('static', filename='img/logo/logo-light.png') }}" alt="logo-venone">
+                <img loading="lazy" class="light-mode-item navbar-brand-item" src="{{ url_for('static', filename='img/logo/logo.png') }}" alt="logo-venone" height="106">
             </a>
 
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,13 +15,12 @@
 
             <div class="navbar-collapse collapse" id="navbarCollapse">
                 <ul class="navbar-nav navbar-nav-scroll mx-auto">
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fonctionnalités</a>
                         <ul class="dropdown-menu" aria-labelledby="demoMenu">
                             <li><a class="dropdown-item" href="#">Gestion des factures</a></li>
+                            <li><a class="dropdown-item" href="#">Récensement des unités locatives</a></li>
                             <li><a class="dropdown-item" href="#">Reporting et Analyses</a></li>
-                            <li><a class="dropdown-item" href="#">Recensement des unités locatives</a></li>
                         </ul>
                     </li>
 
@@ -33,19 +31,19 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">À Propos</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-            </div>
 
-            <div class="navbar-nav">
-                <a href="#!" class="btn btn-sm btn-outline-danger mb-0 text-uppercase fw-semi-bold me-3">
-                    créer un compte entreprise
-                </a>
+                <div class="navbar-nav text-uppercase mx-sm-3">
+                    <a href="#!" class="btn btn-sm btn-outline-danger fw-semi-bold my-sm-3 my-lg-0 me-lg-3">
+                        créer un compte entreprise
+                    </a>
 
-                <a href="#!" class="btn btn-sm btn-outline-primary mb-0 text-uppercase fw-semi-bold">
-                    créer un compte particulier
-                </a>
+                    <a href="#!" class="btn btn-sm btn-outline-primary fw-semi-bold mb-sm-2 mb-lg-0">
+                        créer un compte particulier
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
