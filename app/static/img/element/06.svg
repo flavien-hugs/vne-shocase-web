@@ -35,9 +35,9 @@
 	.st28{fill:url(#SVGID_9_);stroke:#263238;stroke-miterlimit:10;}
 </style>
 <g>
-	
+
 		<ellipse transform="matrix(0.9742 -0.2256 0.2256 0.9742 -0.5732 136.7766)" class="st0" cx="598.1" cy="70.9" rx="56.9" ry="56.9"/>
-	
+
 		<ellipse transform="matrix(0.9741 -0.2259 0.2259 0.9741 -0.5532 136.9581)" class="st1" cx="598.1" cy="70.9" rx="52.8" ry="52.8"/>
 	<circle class="st2" cx="598.1" cy="70.9" r="3"/>
 	<polyline class="st3" points="571.4,70.9 598.1,70.9 598.1,38.3 	"/>
@@ -71,7 +71,7 @@
 				<rect x="368.8" y="195.5" class="st5" width="109.6" height="7.8"/>
 				<rect x="368.8" y="198.2" class="st4" width="109.6" height="2.3"/>
 				<g>
-					
+
 						<ellipse transform="matrix(0.9965 -8.399860e-02 8.399860e-02 0.9965 -12.6121 36.0151)" class="st7" cx="421.7" cy="167.9" rx="16.1" ry="16.1"/>
 					<polygon class="st8" points="431,168.2 417,160.1 417,176.3 					"/>
 				</g>
@@ -81,7 +81,7 @@
 				<rect x="368.8" y="273.2" class="st5" width="109.6" height="7.8"/>
 				<rect x="368.8" y="275.9" class="st4" width="109.6" height="2.3"/>
 				<g>
-					
+
 						<ellipse transform="matrix(0.9965 -8.399860e-02 8.399860e-02 0.9965 -19.1385 36.2897)" class="st9" cx="421.7" cy="245.6" rx="16.1" ry="16.1"/>
 				</g>
 			</g>
@@ -90,7 +90,7 @@
 				<rect x="368.8" y="350.9" class="st5" width="109.6" height="7.8"/>
 				<rect x="368.8" y="353.6" class="st4" width="109.6" height="2.3"/>
 				<g>
-					
+
 						<ellipse transform="matrix(0.1255 -0.9921 0.9921 0.1255 48.0453 701.0701)" class="st7" cx="421.7" cy="323.3" rx="16.1" ry="16.1"/>
 					<polygon class="st8" points="431,323.6 417,315.5 417,331.7 					"/>
 				</g>
@@ -178,10 +178,10 @@
 		c4.7,0,8.6-3.3,8.6-7.3C430.3,240.5,426.4,237.3,421.7,237.3z"/>
 </g>
 <g>
-	
+
 		<ellipse transform="matrix(0.8847 -0.4662 0.4662 0.8847 -173.0573 143.3728)" class="st9" cx="203.2" cy="421.5" rx="22" ry="22"/>
 	<g>
-		
+
 			<rect x="190.3" y="412.3" transform="matrix(0.7026 0.7116 -0.7116 0.7026 360.6956 -19.0972)" class="st16" width="25.8" height="19.4"/>
 		<polyline class="st16" points="201,406 201.6,423.5 219.2,424.3 		"/>
 	</g>

@@ -36,7 +36,6 @@ def create_app(config_name):
         from .main import main as main_blueprint
 
         app.register_blueprint(main_blueprint)
-        
 
         @app.errorhandler(404)
         def pageNotFound(error):
@@ -61,8 +60,7 @@ def create_app(config_name):
         @app.errorhandler(400)
         def keyError(error):
             page_title = f"{error.code} - une demande invalide a entraîné une KeyError."
-            app.logger.warning(
-                "Invalid request resulted in KeyError", exc_info=error)
+            app.logger.warning("Invalid request resulted in KeyError", exc_info=error)
             return (
                 render_template("page/error.html", page_title=page_title, error=error),
                 400,
@@ -79,6 +77,7 @@ def create_app(config_name):
         if not app.debug and not app.testing:
             if not os.path.exists("logs"):
                 os.mkdir("logs")
+
             file_handler = RotatingFileHandler(
                 "logs/logging.log", maxBytes=10240, backupCount=10
             )
