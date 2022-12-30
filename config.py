@@ -12,10 +12,10 @@ class Config:
     SECRET_KEY = environ.get("SECRET_KEY", urandom(24))
     SITE_NAME = "Venone"
     EMAIL_ADDRESS = "support@venone.app"
+    EMAIL_ADDRESS_CONTACT = "contact@venone.app"
     PHONE_NUMBER = "(+225) 01 0137 6322"
     PHONE_NUMBER_TWO = "(225) 07 5795 0079"
     PHONE_NUMBER_THREE = "(225) 01 7121 0836"
-    FLASKY_ADMIN = "admin@venone.app"
     FLATPAGES_EXTENSION = ".md"
     FLATPAGES_MARKDOWN_EXTENSIONS = ["codehilite"]
     SLOW_DB_QUERY_TIME = 0.5
