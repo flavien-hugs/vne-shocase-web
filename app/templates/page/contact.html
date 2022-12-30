@@ -1,0 +1,62 @@
+{% extends "_base.html" %}
+
+{% block body_content %}
+	
+	{% include "includes/paths/_breadcrumb.html" with context %}
+
+	<section class="pt-5 pb-0 pb-lg-5">
+	    <div class="container">
+	        <div class="row g-4 g-md-5 mb-3">
+	            <div class="col-lg-12">
+	               	<h3 class="mb-2">Pour nous contacter, rien de plus simple, vous pouvez:</h3>
+	               	<p>
+	               		Pour nous contacter, rien de plus simple, vous pouvez <a class="fw-bold text-danger" target="_blank" href="#!">nous envoyer un ticket</a>, <a class="fw-bold text-danger" target="_blank" href="mailto:{{ config.EMAIL_ADDRESS_CONTACT }}">un e-mail</a> ou <a target="_blank" class="fw-bold text-danger" href="https://wa.me/+2250151571396">un message WhatsApp</a>. L'un de nos spécialistes produits vous répondra rapidement et se fera un plaisir de vous aider.
+	               	</p>
+	            </div>
+	        </div>
+
+	        <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="bg-info bg-opacity-10 rounded-3 p-5">
+                        <h2 class="display-5 text-info"><i class="bi bi-headset"></i></h2>
+                        <h3>Appel WhatsApp</h3>
+                        <p>Nous pouvons échanger par appel téléphonique.</p>
+                        <a href="https://wa.me/+2250151571396" class="btn btn-dark mb-0">Appelez-nous</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-purple bg-opacity-10 rounded-3 p-5">
+                        <h2 class="display-5 text-purple"><i class="fas fa-ticket-alt"></i></h2>
+                        <h3>Ouvrir un Ticket</h3>
+                        <p>Ouvrir un ticket pour recevoir une réponse sous 24 heures</p>
+                        <a target="_blank" href="#" class="btn btn-dark mb-0">Ouvrir un Ticket</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-warning bg-opacity-15 rounded-3 p-5">
+                        <h2 class="display-5 text-warning"><i class="bi bi-envelope-fill"></i></h2>
+                        <h3>Envoyer un e-mail</h3>
+                        <p>Laissez-nous un e-mail et nous vous repondrons dans un bref délais</p>
+                        <a target="_blank" href="mailto:{{ config.EMAIL_ADDRESS_CONTACT }}" class="btn btn-dark mb-0">Envoyer un e-mail</a>
+                    </div>
+                </div>
+            </div>
+
+	        <div class="row g-4 g-md-5 mb-5">
+	            <div class="col-lg-12">
+	               	<h3 class="mb-2">Il y a d'autres ressources disponibles qui peuvent vous aider</h3>
+	               	<p>
+	               		Nous vous offrons un grand nombre de ressources qui sont constamment mises à jour pour votre utilisation. N'hésitez pas à utiliser notre <a class="text-danger" href="#!">centre d'aide et de documentation</a> ainsi que notre foire aux questions <a class="text-danger" href="#!">(FAQ)</a> pour trouver de l'aide.
+	               	</p>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<section class="pt-0">
+		<div class="container position-relative">
+			{% include "includes/paths/_signup.html" %}
+		</div>
+	</section>
+{% endblock body_content %}

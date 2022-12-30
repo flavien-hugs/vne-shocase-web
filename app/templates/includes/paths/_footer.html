@@ -9,18 +9,27 @@
                 <p class="my-3 text-white">
                 {{ config.SITE_NAME }} est un logiciel de gestion locative et de vente de biens immobiliers et fonciers.</p>
 
-                <ul class="list-inline mb-0 mt-3">
+                <div class="d-sm-flex align-items-center mt-2 mt-sm-4">
+                    <h5 class="mb-0 text-white">Suivez-nous sur: </h5>
+
                     <li class="list-inline-item">
-                        <a class="btn btn-white btn-sm shadow px-2 text-facebook" href="#">
+                        <a class="fs-5 me-1 text-facebook" href="#">
                             <i class="fab fa-fw fa-facebook-f"></i>
                         </a>
                     </li>
+
                     <li class="list-inline-item">
-                        <a class="btn btn-white btn-sm shadow px-2 text-linkedin" href="#">
-                            <i class="fab fa-fw fa-linkedin-in"></i>
+                        <a class="fs-5 me-1 text-pinterest" href="#">
+                            <i class="fab fa-fw fa-whatsapp"></i>
                         </a>
                     </li>
-                </ul>
+
+                    <li class="list-inline-item">
+                        <a class="fs-5 me-1 text-instagram" href="#">
+                            <i class="fab fa-fw  fa-instagram"></i>
+                        </a>
+                    </li>
+                </div>
             </div>
 
             <div class="col-md-6 col-lg-7">
@@ -38,8 +47,8 @@
                     <div class="col-4 col-sm-4">
                         <h5 class="mb-2 mb-2 mb-md-4 text-white">{{ config.SITE_NAME }}</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link pt-0" href="#">FAQ</a></li>
-                            <li class="nav-item"><a class="nav-link pt-0" href="#">Contactez-nous</a></li>
+                            <li class="nav-item"><a class="nav-link pt-0" href="/faq/">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link pt-0" href="{{ url_for('main.contact_page')}}">Contactez-nous</a></li>
                             <li class="nav-item"><a class="nav-link pt-0" href="#">Notre histoire</a></li>
                             <li class="nav-item"><a class="nav-link pt-0" href="#">Notre réseau</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Qui sommes-nous ?</a></li>
@@ -83,7 +92,7 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="/cgu/">
                                     Politique de confidentialité
                                 </a>
                             </li>

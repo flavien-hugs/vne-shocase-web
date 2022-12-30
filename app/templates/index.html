@@ -49,7 +49,7 @@
 	    <div class="container">
 	        <div class="row mb-4">
 	            <div class="col-sm-10 col-xl-6 text-center mx-auto">
-	                <h1 class="h3">Vous pouvez devenir une étoile filante avec notre aide</h1>
+	                <h1 class="fs-3 text-danger">Vous pouvez devenir <br> une étoile filante avec notre aide</h1>
 	                <p class="mb-0">
 	                    Nous savons que gérer manuellement des logements peut être une tâche fastideuse.
 	                    Dématerialisez le métier de gestion immobilière et épargnez vous le stress de la paperasse.
@@ -61,19 +61,21 @@
 	            <div class="col-md-4 text-center">
 	                <img loading="lazy" src="{{ url_for('static', filename='img/element/create-account.svg') }}"  class="h-200px" alt="create-account">
 	                <h4 class="mt-3">Créer votre compte</h4>
-	                <p class="text-truncate-2 mb-0">Satisfied conveying a dependent contented he gentleman agreeable do be.</p>
+	                <p class="text-truncate-2 mb-0">Créer votre compte en moins de cinq minutes</p>
 	            </div>
 
 	            <div class="col-md-4 text-center">
 	                <img loading="lazy" src="{{ url_for('static', filename='img/element/add-course.svg') }}" class="h-200px" alt="">
 	                <h4 class="mt-3">Enregistrer vos entités</h4>
-	                <p class="text-truncate-2 mb-0">Proceed how any engaged visitor</p>
+	                <p class="text-truncate-2 mb-0">Commencer à lister vos entités locatives.</p>
 	            </div>
 
 	            <div class="col-md-4 text-center">
 	                <img loading="lazy" src="{{ url_for('static', filename='img/element/earn-money.svg') }}" class="h-200px" alt="earn-money">
 	                <h4 class="mt-3">Encaisser vos loyers</h4>
-	                <p class="text-truncate-2 mb-0">Insipidity the sufficient discretion imprudence resolution sir him decisively.</p>
+	                <p class="text-truncate-2 mb-0">
+	                	Encaisser automatiquement vos loyers.
+	                </p>
 	            </div>
 	        </div>
 	    </div>
@@ -83,7 +85,7 @@
 	    <div class="container">
 	        <div class="row g-4 align-items-center justify-content-between">
 	            <div class="col-md-6 col-xl-6">
-	                <h1 class="fs-2">
+	                <h1 class="fs-2 text-danger">
 	                	Une pile de <br>
 	                	fonctionnalités innovantes
 	                </h1>
@@ -173,8 +175,8 @@
 	    <div class="container">
 	    	<div class="row mb-4">
 	            <div class="col-sm-10 col-xl-6 text-center mx-auto">
-	                <h1 class="h3">
-	                	Essayez {{ config.SITE_NAME }}, le partenaire de confiance de votre activité
+	                <h1 class="fs-4 text-danger">
+	                	Essayez {{ config.SITE_NAME }}, le partenaire de confiance de votre <br> activité de gestion immobilière
 	                </h1>
 	                <p class="mb-0">
 	                    Nous savons que gérer manuellement des logements peut être une tâche fastideuse.
@@ -182,43 +184,8 @@
 	                </p>
 	            </div>
 	        </div>
-	        <div class="row g-4">
-	            <div class="col-lg-6 position-relative overflow-hidden">
-	                <div class="bg-primary bg-opacity-10 rounded-0 p-5 h-100">
-	                    <div class="position-absolute bottom-0 end-0 me-3">
-	                        <img loading="lazy" src="{{ url_for('static', filename='img/element/15.svg') }}" class="h-100px h-sm-200px" alt=""></div>
-	                    <div class="row">
-	                        <div class="col-sm-8 position-relative">
-	                            <h4 class="mb-1">Vous êtes une agence immobilière ?</h4>
-	                            <p class="mb-3 h5 fw-light small">
-	                                Cette application vous facilite la gestion de vos unités locatives.
-	                            </p>
-	                            <a href="#!" class="btn btn-primary mb-0">
-	                            	Créer votre compte
-	                            </a>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-
-	            <div class="col-lg-6 position-relative overflow-hidden">
-	                <div class="bg-secondary rounded-0 bg-opacity-10 p-5 h-100">
-	                    <div class="position-absolute bottom-0 end-0 me-3">
-	                        <img loading="lazy" src="{{ url_for('static', filename='img/element/08.svg') }}" class="h-100px h-sm-200px" alt=""></div>
-	                    <div class="row">
-	                        <div class="col-sm-8 position-relative">
-	                            <h4 class="mb-1">Vous êtes propriétaire de maison ?</h4>
-	                            <p class="mb-3 h5 fw-light small">
-	                                Enregistrer et gérer vos logements depuis chez vous
-	                            </p>
-	                            <a href="#!" class="btn btn-warning mb-0">
-	                            	Créer votre compte
-	                            </a>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
+	        
+	        {% include "includes/paths/_signup.html" %}
 	    </div>
 	</section>
 {% endblock body_content %}
