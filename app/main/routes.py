@@ -20,6 +20,12 @@ def home_page():
     return render_template("index.html", **locals())
 
 
+@main.route("/contact/", methods=["GET"], strict_slashes=False)
+def contact_page():
+    page_title = "Contatez-nous"
+    return render_template("page/contact.html", **locals())
+
+
 @main.route("/<path:path>/", methods=["GET"], strict_slashes=False)
 def page(path):
     page = pages.get_or_404(path)
