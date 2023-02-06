@@ -14,27 +14,27 @@ from . import main
 from .. import pages
 
 
-@main.route("/", methods=["GET"], strict_slashes=False)
+@main.route("/", methods=["GET"])
 def home_page():
     page_title = "Acceuil"
     return render_template("index.html", **locals())
 
 
-@main.route("/contact/", methods=["GET"], strict_slashes=False)
+@main.route("/contact/", methods=["GET"])
 def contact_page():
     page_title = "Contatez-nous"
     return render_template("page/contact.html", **locals())
 
 
-@main.route("/<path:path>/", methods=["GET"], strict_slashes=False)
+@main.route("/<path:path>/", methods=["GET"])
 def page(path):
     page = pages.get_or_404(path)
     template = page.meta.get('template', 'page.html')
     return render_template("page/page.html", page=page)
 
 
-@main.route("/sitemap/", strict_slashes=False)
-@main.route("/sitemap.xml/", strict_slashes=False)
+@main.route("/sitemap/")
+@main.route("/sitemap.xml/")
 def sitemap():
 
     host_components = urlparse(request.host_url)
@@ -65,7 +65,7 @@ def sitemap():
     return response
 
 
-@main.route("/robots.txt/", methods=["GET"], strict_slashes=False)
+@main.route("/robots.txt/", methods=["GET"])
 def noindex():
     def Disallow(string):
         return f"Disallow: {string}"
