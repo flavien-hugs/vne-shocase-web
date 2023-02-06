@@ -21,6 +21,8 @@ class Config:
     SLOW_DB_QUERY_TIME = 0.5
     WEBSITE_BUILDER = "https://www.venone.app"
 
+    CRM_BUILDER = "https://gestion.venone.app"
+
     @staticmethod
     def init_app(app):
         pass
