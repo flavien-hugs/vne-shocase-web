@@ -7,6 +7,7 @@ from flask import Flask, render_template
 from flask_mail import Mail
 from flask_moment import Moment
 from flask_migrate import Migrate
+from flask_htmlmin import HTMLMIN
 from flask_flatpages import FlatPages
 from flask_sqlalchemy import SQLAlchemy
 
@@ -18,6 +19,7 @@ db = SQLAlchemy()
 moment = Moment()
 migrate = Migrate()
 pages = FlatPages()
+htmlmin = HTMLMIN(remove_comments=False, remove_empty_space=True)
 
 
 def create_app(config_name):
@@ -30,6 +32,10 @@ def create_app(config_name):
     moment.init_app(app)
     db.init_app(app)
     migrate.init_app(app, db)
+    htmlmin.init_app(app)
+
+    app.url_map.strict_slashes = False
+    app.jinja_env.globals.update(zip=zip)
 
     with app.app_context():
 
